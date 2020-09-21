@@ -6,6 +6,10 @@ import Copyright from './Copyright';
 import Menu from './Menu';
 import styles from './Sidebar.module.scss';
 import { useSiteMetadata } from '../../hooks';
+import Switcher from './Switcher';
+
+const siteConfig = require('../../../config');
+
 
 type Props = {
   isIndex?: boolean,
@@ -13,13 +17,15 @@ type Props = {
 
 const Sidebar = ({ isIndex }: Props) => {
   const { author, copyright, menu } = useSiteMetadata();
-
+  const { darkModeOn } = siteConfig;
   return (
     <div className={styles['sidebar']}>
       <div className={styles['sidebar__inner']}>
         <Author author={author} isIndex={isIndex} />
         <Menu menu={menu} />
         <Contacts contacts={author.contacts} />
+        {darkModeOn ? <Switcher /> : null}
+        <br></br>
         <Copyright copyright={copyright} />
       </div>
     </div>
