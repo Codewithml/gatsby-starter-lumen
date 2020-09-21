@@ -10,7 +10,6 @@ module.exports = {
   postsPerPage: 4,
   googleAnalyticsId: '',
   useKatex: false,
-  darkModeOn: true,
   menu: [
     {
       label: 'Articles',
@@ -30,14 +29,14 @@ module.exports = {
     photo: '/photo.jpg',
     bio: '',
     contacts: {
-      email: 'mailto:codingwithml@gmail.com',
-      // facebook: '#',
-      // telegram: '#',
+      email: 'codingwithml@gmail.com',
+      facebook: '',
+      telegram: '',
       twitter: '#',
-      github: 'https://github.com/codewithml',
+      github: 'codewithml',
       rss: '',
-      // vkontakte: '',
-      // linkedin: '#',
+      vkontakte: '',
+      linkedin: '',
       instagram: '#',
       line: '',
       gitlab: '',

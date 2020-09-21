@@ -39,7 +39,8 @@ export type Node = {
     }
   },
   html: string,
-  id: string
+  id: string,
+  timeToRead: number,
 };
 
 export type Edge = {

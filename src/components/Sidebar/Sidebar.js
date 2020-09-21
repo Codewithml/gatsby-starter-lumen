@@ -4,11 +4,10 @@ import Author from './Author';
 import Contacts from './Contacts';
 import Copyright from './Copyright';
 import Menu from './Menu';
+import DarkmodeToggle from '../Darkmode/DarkmodeToggle';
+import '../Darkmode/Darkmode.scss';
 import styles from './Sidebar.module.scss';
 import { useSiteMetadata } from '../../hooks';
-import Switcher from './Switcher';
-
-const siteConfig = require('../../../config');
 
 
 type Props = {
@@ -17,14 +16,13 @@ type Props = {
 
 const Sidebar = ({ isIndex }: Props) => {
   const { author, copyright, menu } = useSiteMetadata();
-  const { darkModeOn } = siteConfig;
   return (
     <div className={styles['sidebar']}>
       <div className={styles['sidebar__inner']}>
         <Author author={author} isIndex={isIndex} />
         <Menu menu={menu} />
         <Contacts contacts={author.contacts} />
-        {darkModeOn ? <Switcher /> : null}
+        <DarkmodeToggle />
         <br></br>
         <Copyright copyright={copyright} />
       </div>
