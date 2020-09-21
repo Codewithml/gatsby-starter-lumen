@@ -21,13 +21,12 @@ const Feed = ({ edges }: Props) => (
           <span className={styles['feed__item-meta-category']}>
             <Link to={edge.node.fields.categorySlug} className={styles['feed__item-meta-category-link']}>{edge.node.frontmatter.category}</Link>
           </span>
-          <p className={styles['feed_item-meta-category']}>{edge.node.timeToRead} min read</p>
         </div>
         <h2 className={styles['feed__item-title']}>
           <Link className={styles['feed__item-title-link']} to={edge.node.fields.slug}>{edge.node.frontmatter.title}</Link>
         </h2>
         <p className={styles['feed__item-description']}>{edge.node.frontmatter.description}</p>
-        <Link className={styles['feed__item-readmore']} to={edge.node.fields.slug}>Read</Link>
+        {edge.node.timeToRead} min read • <Link className={styles['feed__item-readmore']} to={edge.node.fields.slug}>Read</Link>
       </div>
     ))}
   </div>
