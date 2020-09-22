@@ -6,8 +6,6 @@ import Sidebar from '../components/Sidebar';
 import Feed from '../components/Feed';
 import Page from '../components/Page';
 import Pagination from '../components/Pagination';
-// import DarkmodeToggle from '../components/Darkmode/DarkmodeToggle';
-// import '../components/Darkmode/Darkmode.scss';
 import { useSiteMetadata } from '../hooks';
 import type { PageContext, AllMarkdownRemark } from '../types';
 
@@ -33,7 +31,6 @@ const IndexTemplate = ({ data, pageContext }: Props) => {
   return (
     <Layout title={pageTitle} description={siteSubtitle}>
       <div className="navbar">
-       {/* <DarkmodeToggle /> */}
      </div>
       <Sidebar isIndex />
       <Page>

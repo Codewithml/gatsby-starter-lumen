@@ -1,5 +1,6 @@
 // @flow strict
 import React from 'react';
+import { Link } from 'gatsby';
 import Author from './Author';
 import Contacts from './Contacts';
 import Copyright from './Copyright';
@@ -25,6 +26,9 @@ const Sidebar = ({ isIndex }: Props) => {
         <DarkmodeToggle />
         <br></br>
         <Copyright copyright={copyright} />
+        <span>
+        <Link href="https://github.com/alxshelepenok/gatsby-starter-lumen">Original Gatsby Starter template</Link>
+        </span>
       </div>
     </div>
   );

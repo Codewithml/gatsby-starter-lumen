@@ -19,10 +19,10 @@ const PageTemplate = ({ data }: Props) => {
   const { frontmatter } = data.markdownRemark;
   const { title: pageTitle, description: pageDescription, socialImage } = frontmatter;
   const metaDescription = pageDescription !== null ? pageDescription : siteSubtitle;
-  const socialImageUrl = typeof socialImage !== 'undefined' ? socialImage['publicURL'] : undefined;
+  // const socialImageUrl = typeof socialImage !== 'undefined' ? socialImage['publicURL'] : '';
 
   return (
-    <Layout title={`${pageTitle} - ${siteTitle}`} description={metaDescription} socialImage={socialImageUrl} >
+    <Layout title={`${pageTitle} - ${siteTitle}`} description={metaDescription} >
       <Sidebar />
       <Page title={pageTitle}>
         <div dangerouslySetInnerHTML={{ __html: pageBody }} />

@@ -26,7 +26,7 @@ module.exports = {
   ],
   author: {
     name: 'CodewithML',
-    photo: '/photo.jpg',
+    photo: '/finallogo.png',
     bio: '',
     contacts: {
       email: 'codingwithml@gmail.com',
