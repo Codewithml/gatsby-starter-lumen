@@ -47,31 +47,31 @@ tags:
    
 #### Algorithm
 1. Count method
-* Initialise dictionary
-* for each char in string1
-    * if char exists in dict
-       * increment it's value by 1
-    * else
-       * add char to dictionary as key, and set it's value as 1
+    * Initialise dictionary
+    * for each char in string1
+        * if char exists in dict
+           * increment it's value by 1
+        * else
+           * add char to dictionary as key, and set it's value as 1
 
-* for each char in string2
-    * if char exists in dictionary
-        * decrement it's value by 1
-    * else
-        * add char to dictionary as key, and set it's value as 1
+    * for each char in string2
+        * if char exists in dictionary
+            * decrement it's value by 1
+        * else
+            * add char to dictionary as key, and set it's value as 1
 
-* for every item in dictionary
-    * if value of the item is not 0
-        * return false
-    * else
-        * return true
+    * for every item in dictionary
+        * if value of the item is not 0
+            * return false
+        * else
+            * return true
 2. Sort method
-* Replace the spaces in string and lower it.
-* sort both the string
-* if both strings are equal
-    * return true
-* else
-    * false
+    * Replace the spaces in string and lower it.
+    * sort both the string
+    * if both strings are equal
+        * return true
+    * else
+        * false
 
 #### Time and Space complexity
 1. Count method
