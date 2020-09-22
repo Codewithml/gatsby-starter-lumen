@@ -2,7 +2,7 @@
 template: post
 title: String Reversal
 slug: string-reversal
-draft: true
+draft: false
 date: 2020-09-22T16:19:21.084Z
 description: |-
   Problem statement: Write a function to reverse the words in a given string. 
