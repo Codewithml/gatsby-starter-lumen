@@ -2,7 +2,7 @@
 template: post
 title: Valid Elements in a sorted array
 slug: valid-elements-sorted-array
-draft: true
+draft: false
 date: 2020-09-30T08:55:33.277Z
 description: >-
   Problem Statement: Write a function to count number of distinct elements in a
