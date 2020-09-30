@@ -18,41 +18,53 @@ tags:
 #### Difficulty level: Easy
 
 #### Test Cases
-* [2, 2, 3, 3, 4, 5] --> 4
-* [4, 5, 7, 10, 15] --> 5
-* [1, 1, 1, 2, 5, 5, 5] --> 3
-* [1, 2, 3, 4, 4, 5, 5, 5] --> 5
+
+* \[2, 2, 3, 3, 4, 5] --> 4
+* \[4, 5, 7, 10, 15] --> 5
+* \[1, 1, 1, 2, 5, 5, 5] --> 3
+* \[1, 2, 3, 4, 4, 5, 5, 5] --> 5
 * None --> 0
-***
+
+- - -
+
 ### Algorithm
+
 * Python *Set* Solution
-    * Add elements of array to *set* and return it's length.
 
+  * Add elements of array to *set* and return it's length.
 * Dictionary Solution
-    * Iterate through the given array
-    * If element was previously not seen in dictionary than,
-        * Add the element to dictionary with *value* of 1.
-    * Return the length of dictionary.
-* Best Solution 
-    * Initialise index at *1*
-    * Iterate from 1 to length of given array.
-    * If, the element at current iteration *i* is not equal to element at position of *index - 1*, than
-        * Overwrite the element at *index* with the element at current iteration *i*
-        * increment value of *index* by 1
 
-    * Return *index*
-***
+  * Iterate through the given array
+  * If element was previously not seen in dictionary than,
+
+    * Add the element to dictionary with *value* of 1.
+  * Return the length of dictionary.
+* Best Solution 
+
+  * Initialise index at *1*
+  * Iterate from 1 to length of given array.
+  * If, the element at current iteration *i* is not equal to element at position of *index - 1*, than
+
+    * Overwrite the element at *index* with the element at current iteration *i*
+    * increment value of *index* by 1
+  * Return *index*
+
+- - -
+
 #### Time and Space complexity
+
 * Time complexity of all solutions: O(n)
 * Space complexity
-    * Set: O(n)
-    * Dictionary: O(n)
-    * Best solution: O(1)
-***
+
+  * Set: O(n)
+  * Dictionary: O(n)
+  * Best solution: O(1)
+
+- - -
+
 ### Code
 
 ```python
-
 class ValidElements(object):
     def validElements(self, arr):
         if not arr:
@@ -78,12 +90,11 @@ class ValidElements(object):
                 index += 1
         print(arr)
         return index
-
 ```
 
-### Unit Test
-```python
+#### Unit Test
 
+```python
 import unittest
 from validElements import ValidElements
 
@@ -106,7 +117,6 @@ def main():
 
 if __name__ == "__main__":
     main()
-
 ```
 
 [Github solution](https://github.com/Codewithml/coding-problems-solutons/tree/master/arrays/valid-elements)
