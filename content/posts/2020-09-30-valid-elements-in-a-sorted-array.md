@@ -50,7 +50,9 @@ tags:
     * Best solution: O(1)
 ***
 ### Code
+
 ```python
+
 class ValidElements(object):
     def validElements(self, arr):
         if not arr:
@@ -76,9 +78,12 @@ class ValidElements(object):
                 index += 1
         print(arr)
         return index
+
 ```
+
 ### Unit Test
 ```python
+
 import unittest
 from validElements import ValidElements
 
@@ -101,6 +106,7 @@ def main():
 
 if __name__ == "__main__":
     main()
+
 ```
 
 [Github solution](https://github.com/Codewithml/coding-problems-solutons/tree/master/arrays/valid-elements)
