@@ -13,6 +13,7 @@ category: arrays
 tags:
   - easy-coding-problem
 ---
+
 ### Problem Statement: Write a function to find the missing element from given two arrays.
 #### Difficulty level: Easy
 #### Test Cases:
@@ -57,58 +58,8 @@ tags:
     * Calculate the sum of all the elements in both the arrays.
     * Subtract the sum of second array from the first array.
     * The result will be the missing element.
-### Time and Space complexity
-1. Dictionary Method
-    * Time Complexity: O(n)
-    * Space Complexity: O(n)
-2. XOR Method
-    * Time Complexity: O(n)
-    * Space Complexity: O(1)
-3. Sort Method
-### Problem Statement: Write a function to find the missing element from given two arrays.
-#### Difficulty level: Easy
-#### Test Cases:
-* [1, 2, 3, 4, 5, 6, 7],[3, 7, 2, 1, 4, 6] --> 5
-* [5, 7, 7, 5, 7], [7, 7 ,5, 5] --> 7
-* [9, 8, 7, 6, 5, 4, 3, 2, 1],[9, 8, 7, 5, 4, 3, 2, 1] --> 6
-* [1, 2, 4, 7, 9], [7, 9, 4, 2] --> 1
 
-*There are number of ways this problem can be solved, below are 4 possible solutions*
-
-### Algorithm
-1. Dictionary Method
-    * Initialise a dictionary.
-    * Iterate through the first array, 
-    * If element at current iteration exists in dictionary,
-        * Increment it's value by 1.
-    * Else,
-        * Add the element as key and value as 1 in dictionary
-    * Iterate through the second array,
-    * If element at current iteration exists in dictionary,
-        * Decrement it's value by 1.
-    * Else,
-        * Add the element as key and value as 1 in dictionary.
-   * for every element in dictionary
-        * if value of the element is not 0
-            * return the element
-   
-
-2. Exclusive OR (XOR) Method
-    * Initialise variable *result* to 0
-    * Combine both the arrays.
-    * Iterate through the combined array
-    * Do *XOR* operation of every element with result
-    * Return the result, which will be the missing element
-3. Sort Method
-    * Sort both the given arrays.
-    * Iterate over both the arrays simultaneously.
-    * At a given iteration if value of both the iterators are different, 
-        * return the element from first array, as it is the missing element.
-
-4. Sum Method
-    * Calculate the sum of all the elements in both the arrays.
-    * Subtract the sum of second array from the first array.
-    * The result will be the missing element.
+***
 ### Time and Space complexity
 1. Dictionary Method
     * Time Complexity: O(n)
