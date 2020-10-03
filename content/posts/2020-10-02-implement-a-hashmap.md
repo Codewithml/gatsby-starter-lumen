@@ -2,7 +2,7 @@
 template: post
 title: "Implement a Hashmap "
 slug: hashmap-implementation
-draft: true
+draft: false
 date: 2020-10-02T16:51:10.743Z
 description: "Problem Statement: Implement Hash Map with get, set and remove methods."
 category: arrays
