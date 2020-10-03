@@ -5,9 +5,10 @@ slug: hashmap-implementation
 draft: false
 date: 2020-10-02T16:51:10.743Z
 description: "Problem Statement: Implement Hash Map with get, set and remove methods."
-category: arrays
+category: data-structures
 tags:
-  - arrays
+  - data-structures
+  - python
 ---
 ### Problem Statement: Implement Hash Map with get, set and remove methods.
 #### Difficulty level: Easy
