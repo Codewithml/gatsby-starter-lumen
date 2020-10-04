@@ -6,7 +6,7 @@ draft: true
 date: 2020-10-03T11:56:22.564Z
 description: "Problem Statement: Implement stack with *push*, *pop*, *peek*,
   *isEmpty*, *size* methods using a List."
-category: arrays
+category: data-structures
 tags:
   - arrays
   - stack
@@ -141,6 +141,6 @@ if __name__ == '__main__':
     main()
 ```
 
-[Github repo](https://github.com/Codewithml/coding-problems-solutions/tree/master/stacks-queues/stack)
+[Github repo](https://github.com/Codewithml/coding-problems-solutions/tree/master/stacks-queues/stack/stack-lists)
 
 ### Happy Coding !!
