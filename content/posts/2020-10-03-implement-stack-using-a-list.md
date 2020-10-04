@@ -14,62 +14,89 @@ tags:
 ### Problem Statement: Implement stack with *push*, *pop*, *peek*, *isEmpty*, *size* methods using a List.
 
 #### Test Cases
+
 1. Push
-    * Push on empty stack. 
-    * Push on non-empty stack
+
+   * Push on empty stack. 
+   * Push on non-empty stack
 2. Pop
-    * Pop on empty stack --> None.
-    * Pop on non-empty stack. --> value
+
+   * Pop on empty stack --> None.
+   * Pop on non-empty stack. --> value
 3. Peek
-    * Peek on empty stack --> None.
-    * Peek on non empty stack. --> value
+
+   * Peek on empty stack --> None.
+   * Peek on non empty stack. --> value
 4. isEmpty
-    * isEmpty on empty stack --> True
-    * isEmpty on non-empty stack --> False.
+
+   * isEmpty on empty stack --> True
+   * isEmpty on non-empty stack --> False.
 5. Size
-    * size on empty stack --> None.
-    * size on non empty stack. --> value
+
+   * size on empty stack --> None.
+   * size on non empty stack. --> value
 
 ### Algorithm
+
 1. Push
+
    * Append new value to end of the list.
 2. Pop
+
    * If stack is empty,
-        * return None
+
+     * return None
    * Else,
-        * Pop element from the end of list.
-        * return the element.
+
+     * Pop element from the end of list.
+     * return the element.
 3. Peek
-    * If stack is empty,
-        * return None
-    * Else,
-        * return the last element of the list.
+
+   * If stack is empty,
+
+     * return None
+   * Else,
+
+     * return the last element of the list.
 4. isEmpty
-    * If stack is empty,
-        * return True
-    * Else, 
-        * return False
+
+   * If stack is empty,
+
+     * return True
+   * Else, 
+
+     * return False
 5. Size
-    * Return the length of the list.
+
+   * Return the length of the list.
 
 ### Time and Space complexity
+
 1. Push
-    * Time complexity: O(1)
-    * Space complexity: O(1)
+
+   * Time complexity: O(1)
+   * Space complexity: O(1)
 2. Pop
-    * Time complexity: O(1)
-    * Space complexity: O(1)
+
+   * Time complexity: O(1)
+   * Space complexity: O(1)
 3. Peek
-    * Time complexity: O(1)
-    * Space complexity: O(1)
+
+   * Time complexity: O(1)
+   * Space complexity: O(1)
 4. isEmpty
-    * Time complexity: O(1)
-    * Space complexity: O(1)
+
+   * Time complexity: O(1)
+   * Space complexity: O(1)
 5. Size
-    * Time complexity: O(1)
-    * Space complexity: O(1)
-***
+
+   * Time complexity: O(1)
+   * Space complexity: O(1)
+
+- - -
+
 ### Code
+
 ```python
 class Stack(object):
     def __init__(self):
@@ -96,6 +123,7 @@ class Stack(object):
 ```
 
 ### Unit Test
+
 ```python
 import unittest
 from stackLists import Stack
