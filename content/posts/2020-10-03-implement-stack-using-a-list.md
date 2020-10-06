@@ -4,8 +4,8 @@ title: Implement Stack using a List.
 slug: stack-list
 draft: false
 date: 2020-10-03T11:56:22.564Z
-description: "Problem Statement: Implement stack with *push*, *pop*, *peek*,
-  *isEmpty*, *size* methods using a List."
+description: "Problem Statement: Implement stack with push, pop, peek, isEmpty,
+  size methods using a List."
 category: data-structures
 tags:
   - arrays
