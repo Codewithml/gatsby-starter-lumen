@@ -9,7 +9,7 @@ description: >
   enqueue and dequeue.
 category: data-structures
 tags:
-  - linked-lists
+  - linked-list
 ---
 Problem Statement: Implement a queue using a linked list with methods like *enqueue* and *dequeue*.
 
